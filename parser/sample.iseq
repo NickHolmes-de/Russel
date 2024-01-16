@@ -1,0 +1,20 @@
+
+
+.\setup
+
+
+tempo 120bpm @0:0:0
+key C major
+
+track Name { MidiDevice = "lksdjflskjf", MidiChannel = 1, MidiClock = On, }
+
+start
+stop
+pause
+reset
+move @0:0:0
+
+$Name Push |4|C4:10 - - -| > * 4 > vol 0.8 > 
+$Name Next
+$Name > Gate 0.5
+$Name Pop
